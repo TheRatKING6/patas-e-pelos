@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/form-style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/format-images.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -36,7 +37,7 @@
                         <a class="nav-link" href="about.html">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nossos produtos</a>
+                        <a class="nav-link" href="products.html">Nossos produtos</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -49,62 +50,220 @@
 
     <!--Inicio conteudo-->
     <div class="container-fluid conteudo">
-        <p class="animate__animated animate__shakeY text-center header1">Fazer Cadastro</p>
-        <div class="d-flex justify-content-center w-50">
-            <div id="cadastro" class="w-100">
+        <div class="row">
+            <div class="col">
+                <p class="animate__animated animate__shakeY text-center header1">Fazer Cadastro</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center w-100">
+            <div id="cadastro" class="w-md-50 w-sm-100 mb-5">
                 <form action="index.html" class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-md-12 mb-4">
                             <label class="form-label">Nome Completo</label>
                             <input type="text" class="form-control" placeholder="digite seu nome" required>
+                            <div class="invalid-feedback">
+                                Você precisa informar seu nome
+                            </div>
                         </div>
 
                         <div class="col-md-12 mb-4">
                             <label class="form-label">CPF</label>
                             <input type="text" class="form-control" minlength="14" maxlength="14" placeholder="ex: '123.456.789-10'" required>
+                            <div class="invalid-feedback">
+                                O CPF é obrigatório para cadastro
+                            </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-3">
-                            <label class="form-label">Idade</label>
+                        <div class="col-md-3 col-sm-6">
+                            <label class="form-label mt-3">Idade</label>
                             <input type="number" min="18" max="110" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Você deve ter ao menos 18 anos
+                            </div>
                         </div>
 
-                        <div class="col-md-3">
-                            <label class="form-label">Data de Nascimento:</label>
+                        <div class="col-md-3 col-sm-6">
+                            <label class="form-label mt-3">Data de Nascimento:</label>
                             <input type="date" class="form-control" required>
+                            <div class="invalid-feedback">
+                                A data de nascimento é obrigatória
+                            </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label">Telefone:</label>
-                            <input type="text" class="form-control">
+                        <div class="col-md-6 col-sm-12">
+                            <label class="form-label mt-3">Telefone:</label>
+                            <input type="tel" class="form-control" placeholder="(01) 92134-3214" required>
+                            <div class="invalid-feedback">
+                                Você precisa informar seu telefone
+                            </div>
                         </div>
                     </div>
 
                     
 
                     <fieldset>
-                        <legend class="form-label">Endereço:</legend>
+                        <div class="row mt-4">
+                            <legend class="form-label">Endereço:</legend>
+                        </div>
 
-                        <label class="form-label">Estado:</label>
+                        <div class="row mb-3">
+                            <div class="col-md-2 col-sm-4">
+                                <label class="form-label mt-3">Estado:</label>
+                                <select class="form-select">
+                                    <option value="SP">SP</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="MG">MG</option>
+                                    <option value="ES">ES</option>
+                                </select>
+                            </div>
 
-                        <label class="form-label">Cidade:</label>
+                            <div class="col-md-6 col-sm-8">
+                                <label class="form-label mt-3">Cidade:</label>
+                                <input type="text" placeholder="Informe sua cidade" minlength="2" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Informe a cidade
+                                </div>
+                            </div>
 
-                        <label class="form-label">Bairro:</label>
+                            <div class="col-md-4 col-sm-12">
+                                <label class="form-label mt-3">Bairro:</label>
+                                <input type="text" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Informe seu bairro
+                                </div>
+                            </div>
+                        </div>
 
-                        <label class="form-label">Rua:</label>
+                        <div class="row mb-5">
+                            <div class="col-md-6 col-sm-12">
+                                <label class="form-label mt-3">Rua:</label>
+                                <input type="text" placeholder="'Rua fulano de tal'" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Informe sua rua
+                                </div>
+                            </div>
 
-                        <label class="form-label">Número:</label>
-
-                        <label class="form-label">Complemento:</label>
+                            <div class="col-md-2 col-sm-3">
+                                <label class="form-label mt-3">Número:</label>
+                                <input type="number" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Informe o número de sua residência
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-9">
+                                <label class="form-label mt-3">Complemento:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
                     </fieldset>
 
-                    <label class="form-label">Senha:</label>
+                    <div class="row mb-4">
+                        <div class="col-md-6 col-sm-12">
+                            <label class="form-label mt-3">Senha:</label>
+                            <input type="password" minlength="8" placeholder="Crie uma senha para sua conta" required class="form-control">
+                            <div class="invalid-feedback">
+                                A senha deve ter ao menos 8 dígitos
+                            </div>
+                        </div>
 
-                    <label class="form-label">Email (opcional):</label>
+                        <div class="col-md-6 col-sm-12">
+                            <label class="form-label mt-3">Email (opcional):</label>
+                            <input type="email" required class="form-control">
+                        </div>
+                    </div>
 
-                    <label class="form-label">Sexo:</label>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label class="form-label mt-3">Sexo:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="masc">
+                                <label class="form-check-label" for="masc">
+                                    Masculino
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="fem">
+                                <label class="form-check-label" for="fem">
+                                    Feminino
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="flexRadioDefault" id="na">
+                                <label for="na" class="form-check-label">
+                                    Prefiro não informar
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12">
+                            <label class="form-label mt-4">Eu sou dono(a) de...</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Cachorro(s)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Gato(s)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="passaro">
+                                <label class="form-check-label" for="passaro">
+                                  Passaro(s)
+                                </label>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="outro">
+                                    <label for="outro">Outro:</label>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Li e concordo com os Termos de Serviço
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Li e concordo com as regras de usuário
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Você precisa concordar com nossos termos para se cadastrar
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 mt-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Receber novidades por e-mail</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6 mt-3">
+                            <input type="submit" value="Cadastrar" class="btn btn-success">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input type="reset" value="Limpar" class="btn btn-danger">
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -112,7 +271,51 @@
     </div>
     <!--Fim conteudo-->
 
+    <!--Inicio footer-->
+    <div class="container-fluid bg-dark text-color-light-center" data-bs-theme="dark" id="contato">
+        <div class="row pt-4">
+            <h3>Entre em contato conosco</h3>
+        </div>
+        <div class="row mt-4 pb-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>Telefone: <br>(19) 9345-2469 <br>(19) 9543-5678 (SAC)</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>E-mail: <br>petshop.contato@patasepelos.com <br>petshop.ajuda@patasepelos.com (SAC)</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>Endereço: <br>Rua Vale das Colheitas, 103. Limeira-SP <br>CEP: 13026-064</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>CNPJ: <br>03.778.130/0001-48</p>
+            </div>
+        </div>
+    </div>
+    <!--Fim footer-->
 
+    <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+      </script>
 </body>
 </html>

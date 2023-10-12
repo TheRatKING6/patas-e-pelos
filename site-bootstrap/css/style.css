@@ -1,0 +1,63 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+}
+
+.nav-item{
+    font-size: 16pt;
+}
+
+.container, .conteudo{
+    background-color: rgb(187, 225, 255);
+    /*padding-top: 20px;*/
+    text-align: justify;
+}
+
+.header1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+#intro{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 16pt;
+}
+
+#iconeDog{
+    height: 40px;
+    width: 40px;
+}
+
+#iconeDog:hover{
+    animation: rodar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rodar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.text-color-light-center{
+    text-align: center;
+    color: azure;
+}
+
+#cadastro{
+    background-color: cornflowerblue;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 20px;
+}

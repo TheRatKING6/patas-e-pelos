@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/format-images.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    
+        <title>Serviços - Patas e Pelos</title>
+    </head>
+</head>
+<body>
+    <!--Inicio navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagens/dog.png" alt="Icon" id="iconeDog"> 
+                Patas e Pelos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="services.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nossos produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a href="form.html"><button class="btn btn-outline-success" type="button">Cadastre-se</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Fim navbar-->
+
+    <!--Inicio conteudo-->
+    <div class="container">
+        
+        <div class="row">
+            <p class="animate__animated animate__bounceIn header1 text-center">Nossos Serviços</p>
+            <p>
+                Bem-vindo ao Patas e Pelos Pet Shop! Aqui você encontrará uma ampla gama de serviços dedicados ao cuidado e ao bem-estar do seu amado animal de estimação, tudo isso por um preço acessível. Nossa equipe de especialistas altamente qualificados está pronta para atender às necessidades de cães, gatos, aves, répteis e roedores, fornecendo cuidados personalizados e profissionais. Desde banho e tosa até serviços de saúde e nutrição, estamos comprometidos em oferecer a você e ao seu companheiro peludo uma experiência excepcional. Descubra como podemos ajudar a tornar a vida do seu animal de estimação mais feliz e saudável.
+            </p>
+            <p>
+                O Patas e Pelos é mais do que um simples pet shop; somos uma extensão da sua família quando se trata de cuidar do seu animal de estimação. Queremos ajudar a tornar a vida do seu companheiro peludo mais feliz e saudável, proporcionando cuidados excepcionais, experiência e paixão. Junte-se a nós e descubra como podemos ser o parceiro ideal para você e o seu animal de estimação em sua jornada de amor e cuidado.
+            </p>
+            <p>Nossos serviços incluem: </p>
+
+            <!--Inicio Accordion-->
+            <div class="accordion mb-5" id="accordionServicos">
+                <div class="accordion-item">
+                    <div id="higiene">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Higiene e Lazer
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionServicos">
+                            <div class="accordion-body">
+                                <h3>Higiene e Lazer</h3>
+
+                                <!--Inicio carousel-higiene-->
+                                <div id="carouselHigiene" class="carousel slide carousel-dark mt-4" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselHigiene" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselHigiene" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselHigiene" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <a href="#banho"><img src="imagens/banho-dog.jpg" class="d-block w-100" alt="banhos"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Banhos</h5>
+                                          <p>Nossas instalações oferecem banhos de primeira qualidade. Para uma limpeza digna do seu melhor amigo.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <a href="#tosa"><img src="imagens/tosa-dog.jpg" class="d-block w-100" alt="tosas"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Tosa</h5>
+                                          <p>Temos uma grande equipe com alguns dos maiores especialistas em estética animal e saude do pelo.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <a href="#spa"><img src="imagens/cachorro_spa.png" class="d-block w-100" alt="serviço de spa para pets"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Spa</h5>
+                                          <p>Nós oferecemos também um serviço de spa para seu animalzinho.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHigiene" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHigiene" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                <!--Fim carousel-higiene-->
+
+                                <!--<picture>
+                                    <img src="imagens/cachorro_spa.png" alt="cachorro no spa com pepinos nos olhos" id="foto2">
+                                </picture>-->
+                                <p class="mt-4">
+                                    Em nossas instalações dedicadas ao cuidado de animais de estimação, proporcionamos uma ampla gama de serviços de alta qualidade para atender às necessidades de seu querido amigo peludo. Entendemos que seu cachorro ou gato merece o melhor tratamento, e é por isso que oferecemos uma variedade de serviços cuidadosamente projetados para garantir que eles estejam sempre no auge de sua saúde e felicidade.
+                                </p>
+                                <p>
+                                    Não importa se você está procurando um simples banho e tosa de rotina ou um dia de mimos no spa para o seu pet, estamos aqui para atender às necessidades de seu cachorro ou gato. Nossa equipe é apaixonada por animais e está comprometida em proporcionar o melhor atendimento possível, garantindo que seu animal de estimação se sinta amado e cuidado em nossas instalações.
+                                </p>
+                                <p>
+                                    Confie em nós para fornecer os serviços de banho, tosa e spa completos que seu animal de estimação merece. Trabalhamos com dedicação para garantir que seu cachorro ou gato saia de nossas instalações não apenas limpo e bem-cuidado, mas também feliz e satisfeito. Afinal, o bem-estar de seu animal de estimação é nossa prioridade número um.
+                                </p>
+                            </div>
+                            <div id="banho">
+                                <h5>Banhos</h5>
+                                <p>
+                                    Um dos serviços essenciais que oferecemos é o banho completo. Nossos experientes groomers têm o conhecimento e a habilidade para deixar seu animal de estimação limpo, cheiroso e com uma pelagem saudável. Utilizamos produtos de alta qualidade e técnicas de banho que são suaves para a pele sensível de seu animal de estimação. Além disso, nosso ambiente é calmo e relaxante, proporcionando uma experiência positiva para o seu animal.
+                                </p>
+                                <p>
+                                    Confira uma tabela de preços:
+                                </p>
+                                <!--Inicio tabela-banho-->
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-hover">
+                                        <caption>Serviços de Banhos</caption>
+                                        <thead class="table-dark">
+                                            <tr height="50px">
+                                                <th colspan="2" width="40%">Serviços</th>
+                                                <th>Preço Normal</th>
+                                                <th>Preço Deluxe</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                            <tr>
+                                                <th rowspan="4" width="10%" class="secao">Cachorros (médios) e gatos</th>
+                                                <td>Banho</td>
+                                                <td>R$ 40,00</td>
+                                                <td>R$ 62,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho + amaciante de pelos</td>
+                                                <td>R$ 50,00</td>
+                                                <td>R$ 72,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho + limpeza profunda</td>
+                                                <td>R$ 60,00</td>
+                                                <td>R$ 72,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho completo</td>
+                                                <td>R$ 70,00</td>
+                                                <td>R$ 82,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="4">Cachorros Pequenos</th>
+                                                <td>Banho</td>
+                                                <td>R$ 30,00</td>
+                                                <td>R$ 35,90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho + amaciante de pelos</td>
+                                                <td>R$ 40,00</td>
+                                                <td>R$ 45,90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho + limpeza profunda</td>
+                                                <td>R$ 50,00</td>
+                                                <td>R$ 55,90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho completo</td>
+                                                <td>R$ 60,00</td>
+                                                <td>R$ 65,90</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="4">Cachorros Grandes</th>
+                                                <td>Banho</td>
+                                                <td>R$ 52,00</td>
+                                                <td>R$ 70,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho + amaciante de pelos</td>
+                                                <td>R$ 62,00</td>
+                                                <td>R$ 80,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho + limpeza profunda</td>
+                                                <td>R$ 72,00</td>
+                                                <td>R$ 90,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Banho completo</td>
+                                                <td>R$ 82,00</td>
+                                                <td>R$ 100,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Fim tabela-banho-->
+                                                    
+                            </div>
+                            <div id="tosa">
+                                <h5>Tosas</h5>
+                                <p>
+                                    A tosa é outra parte importante do cuidado de seu pet, e nossos profissionais experientes são especializados em diversos estilos de tosa para cães e gatos. Seja para manter uma pelagem longa e deslumbrante ou para proporcionar uma tosa de verão refrescante, podemos personalizar o serviço de acordo com as preferências e necessidades do seu animal de estimação.
+                                </p>
+                                <p>
+                                    Confira uma tabela de preços:
+                                </p>
+                                <!--Inicio tabela-tosa-->
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-hover">
+                                        <caption>Serviços de tosa</caption>
+                                        <thead class="table-dark">
+                                            <tr height="50px">
+                                                <th colspan="2" width="40%">Serviços</th>
+                                                <th>Preço Normal</th>
+                                                <th>Preço Deluxe</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                            <tr>
+                                                <th rowspan="3" width="10%" class="secao">Cachorros (médios) e gatos</th>
+                                                <td>Tosa simples</td>
+                                                <td>R$ 22,00</td>
+                                                <td>R$ 28,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tosa + tratamento de pele</td>
+                                                <td>R$ 32,00</td>
+                                                <td>R$ 38,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tosa completa</td>
+                                                <td>R$ 42,00</td>
+                                                <td>R$ 48,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="3">Cachorros Pequenos</th>
+                                                <td>Tosa simples</td>
+                                                <td>R$ 12,00</td>
+                                                <td>R$ 18,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tosa + tratamento de pele</td>
+                                                <td>R$ 22,00</td>
+                                                <td>R$ 28,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tosa completa</td>
+                                                <td>R$ 32,00</td>
+                                                <td>R$ 38,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="3">Cachorros Grandes</th>
+                                                <td>Tosa simples</td>
+                                                <td>R$ 32,00</td>
+                                                <td>R$ 38,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tosa + tratamento de pele</td>
+                                                <td>R$ 42,00</td>
+                                                <td>R$ 48,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tosa completa</td>
+                                                <td>R$ 52,00</td>
+                                                <td>R$ 58,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Fim tabela-tosa-->
+                            </div>
+                            <div id="spa">
+                                <h5>Spa</h5>
+                                <p>
+                                    Além disso, oferecemos serviços de spa que são verdadeiros mimos para seus animais. Nossos tratamentos de spa incluem massagens relaxantes, hidratação profunda para a pele e pelagem, aromaterapia e muito mais. Sabemos o quanto seu pet merece ser mimado, e nossos tratamentos de spa são projetados para proporcionar conforto e bem-estar.
+                                </p>
+                                <p>
+                                    Confira uma tabela de preços:
+                                </p>
+                                <!--Inicio tabela-spa-->
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-hover">
+                                        <caption>Serviços de Spa</caption>
+                                        <thead class="table-dark">
+                                            <tr height="50px">
+                                                <th colspan="2" width="40%">Serviços</th>
+                                                <th>Preço Normal</th>
+                                                <th>Preço Deluxe</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                            <tr>
+                                                <th rowspan="4" width="10%" class="secao">Cachorros (médios) e gatos</th>
+                                                <td>Spa simples</td>
+                                                <td>R$ 54, 00</td>
+                                                <td>R$ 60,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa + Sauna</td>
+                                                <td>R$ 64,00</td>
+                                                <td>R$ 70,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa + massagem com óleo</td>
+                                                <td>R$ 84,00</td>
+                                                <td>R$ 90,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa relaxamento profundo</td>
+                                                <td>R$ 94,00</td>
+                                                <td>R$ 100,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="4">Cachorros Pequenos</th>
+                                                <td>Spa simples</td>
+                                                <td>R$ 44, 00</td>
+                                                <td>R$ 50,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa + Sauna</td>
+                                                <td>R$ 54,00</td>
+                                                <td>R$ 60,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa + massagem com óleo</td>
+                                                <td>R$ 74,00</td>
+                                                <td>R$ 80,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa relaxamento profundo</td>
+                                                <td>R$ 84,00</td>
+                                                <td>R$ 90,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="4">Cachorros Grandes</th>
+                                                <td>Spa simples</td>
+                                                <td>R$ 64, 00</td>
+                                                <td>R$ 70,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa + Sauna</td>
+                                                <td>R$ 74,00</td>
+                                                <td>R$ 80,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa + massagem com óleo</td>
+                                                <td>R$ 94,00</td>
+                                                <td>R$ 100,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spa relaxamento profundo</td>
+                                                <td>R$ 104,00</td>
+                                                <td>R$ 110,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Fim tabela-spa-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div id="hotel">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Hotel para Animais
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                            <div class="accordion-body">
+                                <h3>Hotel para Animais</h3>
+
+                                <!--Inicio carousel-hotel-->
+                                <div id="carouselHotel" class="carousel slide carousel-dark mt-4" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselHotel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselHotel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselHotel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="imagens/hotel_cachorro.jpg" class="d-block w-100" alt="cachorro num hotel">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Confortável</h5>
+                                                <p>Temos amplo espaço com instalações que garantem o conforto máximo do seu pet.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imagens/dog-relax.jpg" class="d-block w-100" alt="cachorro muito relaxado">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Relaxante</h5>
+                                                <p>Nossa equipe conta com especialistas em relaxamento e conforto de animais.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imagens/dog-brincando.png" class="d-block w-100" alt="cachorros brincando">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Divertido</h5>
+                                                <p>Nós temos um espaço acolhedor que garante que seu pet será bem cuiado e irá se divertir muito!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!--Fim carousel-hotel-->
+
+                                <!--<picture>
+                                    <img src="imagens/hotel_cachorro.jpg" alt="cachorro de óculos escuros em um hotel" id="foto3">
+                                </picture>-->
+                                <p class="mt-3">
+                                    O Patas e Pelos, o seu pet shop de confiança, vai além de apenas cuidar do visual do seu amado animal de estimação. Compreendemos que às vezes a vida nos leva a situações em que a presença do seu querido pet não é possível, seja devido a compromissos de trabalho, viagens ou outros motivos pessoais. É por isso que oferecemos um serviço de hotel exclusivo para seu animalzinho, proporcionando a você a tranquilidade de saber que ele está em boas mãos.
+                                </p>
+                                <p>
+                                    Nosso hotel para animais de estimação é um verdadeiro lar longe de casa. Quando você nos confia o cuidado do seu pet, você está garantindo a ele o conforto, segurança e entretenimento que ele merece. Nossa equipe dedicada é composta por amantes de animais que entendem a importância de manter um ambiente acolhedor e carinhoso para seu companheiro de quatro patas.
+                                </p>
+                                <p>
+                                    No nosso hotel, seu pet desfrutará de um espaço espaçoso e limpo, projetado para atender às necessidades específicas de cada animal. Nós fornecemos camas macias e aconchegantes para que seu animalzinho possa relaxar e descansar em conforto. Além disso, garantimos a alimentação adequada de acordo com as preferências e necessidades do seu pet.
+                                </p>
+                                <p>
+                                    No Patas e Pelos, estamos comprometidos em criar um ambiente onde seu animal de estimação se sinta amado e cuidado, como se estivesse em casa. Estamos aqui para atender às necessidades do seu pet, independentemente do tempo que você precisar de nossos serviços de hotel. Deixe-nos cuidar do seu amado animalzinho enquanto você se ausenta, proporcionando a você a paz de espírito que você merece. Seu pet sempre será recebido com carinho e atenção em nosso hotel.
+                                </p>
+                                <!--Inicio tabela-hotel-->
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-hover">
+                                        <caption>Serviços de Hospedagem</caption>
+                                        <thead class="table-dark">
+                                            <tr height="50px">
+                                                <th width="10%">Tamanho do pet</th>
+                                                <th>Período de tempo</th>
+                                                <th>Preço</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                            <tr>
+                                                <th rowspan="4">Pequenininho</th>
+                                                <td>De 1 à 7 dias</td>
+                                                <td>R$ 7,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 8 à 18 dias</td>
+                                                <td>R$ 10,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 19 à 30 dias</td>
+                                                <td>R$ 13,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>31 ou mais dias</td>
+                                                <td>R$ 17,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="4">Pequeno</th>
+                                                <td>De 1 à 7 dias</td>
+                                                <td>R$ 12,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 8 à 18 dias</td>
+                                                <td>R$ 16,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 19 à 30 dias</td>
+                                                <td>R$ 20,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>31 ou mais dias</td>
+                                                <td>R$ 25,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="4">Médios</th>
+                                                <td>De 1 à 7 dias</td>
+                                                <td>R$ 20,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 8 à 18 dias</td>
+                                                <td>R$ 26,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 19 à 30 dias</td>
+                                                <td>R$ 34,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>31 ou mais dias</td>
+                                                <td>R$ 40,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="4">Grandes</th>
+                                                <td>De 1 à 7 dias</td>
+                                                <td>R$ 27,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 8 à 18 dias</td>
+                                                <td>R$ 36,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>De 19 à 30 dias</td>
+                                                <td>R$ 44,00/dia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>31 ou mais dias</td>
+                                                <td>R$ 53,00/dia</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Fim tabela-hotel-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div id="veterinario">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Serviços Veterinários
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                            <div class="accordion-body">
+                                <h3>Serviços Veterinários</h3>
+
+                                <!--Inicio carousel-vet-->
+                                <div id="carouselVeterinario" class="carousel slide carousel-dark mt-4" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselVeterinario" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselVeterinario" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="imagens/veterinario.jpg" class="d-block w-100" alt="Veterinario cuidando de cachorro">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Veterinários de ponta</h5>
+                                                <p>Nossa equipe emprega alguns dos melhores profissionais da área veterinária.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="imagens/pet-exotico.jpg" class="d-block w-100" alt="várias espécies de animais diferentes">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Para seu animal... seja lá qual for</h5>
+                                                <p>Nós contratamos especialistas em todos os tipos de animais. Incluindo aqueles menos comuns.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVeterinario" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselVeterinario" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!--Fim carousel-vet-->
+
+                                <!--<picture>
+                                    <img src="imagens/veterinario.jpg" alt="cachorro sendo tratado no veterinário" id="foto4">
+                                </picture>-->
+
+                                <p class="mt-3">
+                                    Além dos nossos serviços de cuidados estéticos e de hospedagem, orgulhamo-nos de disponibilizar uma completa gama de serviços veterinários para o seu querido animal de estimação. A saúde e o bem-estar do seu companheiro peludo são de suma importância para nós, e é por isso que contratamos médicos veterinários altamente especializados e renomados. Estes profissionais são dedicados a assegurar que o seu pet receba o atendimento ideal e personalizado que merece.
+                                </p>
+                                <p>
+                                    A nossa equipa de veterinários é composta por especialistas em diversas áreas, incluindo medicina interna, cirurgia, ortopedia, odontologia e muito mais. Isto significa que podemos oferecer um leque abrangente de cuidados de saúde para o seu animal de estimação, independentemente das suas necessidades médicas. Desde exames de rotina até tratamentos complexos, estamos equipados e preparados para oferecer um atendimento de excelência.
+                                </p>
+                                <p>
+                                    Os nossos médicos veterinários não são apenas altamente qualificados, mas também profundamente apaixonados por animais. Eles entendem o laço especial que existe entre você e o seu pet, e trabalham incansavelmente para garantir que o seu amigo peludo receba o mais alto padrão de cuidados e atenção.
+                                </p>
+                                <p>
+                                    Entre em contato conosco para mais informaçÕes a respeito de nossos serviços veterinários.
+                                </p>
+                                <p>
+                                    Segue uma tabela de preço para nossos serviços mais básicos (preços podem variar):
+                                </p>
+                                <!--Inicio tabela-vet-->
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-hover">
+                                        <caption>Serviços Veterinários</caption>
+                                        <thead class="table-dark">
+                                            <tr height="50px">
+                                                <th colspan="2">Serviços</th>
+                                                <th>Preço</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-group-divider">
+                                            <tr>
+                                                <td colspan="2">Renovação de Vacinas</td>
+                                                <td>R$ 65,00 - R$ 110,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Check-Up Geral</td>
+                                                <td>R$ 50,00 - R$ 60,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Exames Laboratoriais</td>
+                                                <td>R$ 78,90 - R$ 90,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Cirurgias</td>
+                                                <td>Animais Comuns</td>
+                                                <td>R$ 150,00 - R$ 440,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Animias Exóticos</td>
+                                                <td>R$ 310,00 - R$ 670,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Fim tabela-vet-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div id="adestramento">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Serviço de Adestramento
+                            </button>
+                        </h3>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                            <div class="accordion-body">
+                                <h4>Serviço de Adestramento</h4>
+                                <p>
+                                    No Patas e Pelos Pet Shop, oferecemos um serviço de adestramento profissional que visa fortalecer a relação entre os donos e seus animais de estimação, proporcionando uma convivência harmoniosa e feliz. Nossos treinadores altamente qualificados utilizam métodos positivos e reforço positivo para ensinar comandos básicos, corrigir comportamentos indesejados e estimular o desenvolvimento cognitivo e emocional dos animais. Com programas personalizados para atender às necessidades individuais de cada animal, nosso serviço de adestramento é projetado para promover a obediência, a confiança e o bem-estar do seu companheiro peludo, permitindo que ele se torne um membro equilibrado e bem-comportado da família.
+                                </p>
+                                <p>
+                                    Agende já uma avaliação com nossos especialistas para que eles possam fazer um orçamento para seu pet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fim Accordion-->
+    </div>
+    <!--Fim conteudo-->
+
+    <!--Inicio footer-->
+    <div class="container-fluid bg-dark text-color-light-center" data-bs-theme="dark" id="contato">
+        <div class="row pt-4">
+            <h3>Entre em contato conosco</h3>
+        </div>
+        <div class="row mt-4 pb-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>Telefone: <br>(19) 9345-2469 <br>(19) 9543-5678 (SAC)</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>E-mail: <br>petshop.contato@patasepelos.com <br>petshop.ajuda@patasepelos.com (SAC)</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>Endereço: <br>Rua Vale das Colheitas, 103. Limeira-SP <br>CEP: 13026-064</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p>CNPJ: <br>03.778.130/0001-48</p>
+            </div>
+        </div>
+    </div>
+    <!--Fim footer-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--comentário-->

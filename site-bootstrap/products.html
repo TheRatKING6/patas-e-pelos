@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/format-images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <title>Produtos - Patas e Pelos</title>
+</head>
+<body>
+    <!--Inicio navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagens/dog.png" alt="Icon" id="iconeDog"> 
+                Patas e Pelos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="index.html"><i class="bi bi-house"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html"><i class="bi bi-hand-thumbs-up"></i> Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="products.html"><i class="bi bi-cart4"></i> Nossos produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato"><i class="bi bi-send"></i> Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a href="form.html"><button class="btn btn-outline-success" type="button"><i class="bi bi-box-arrow-in-right"></i> Cadastre-se</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Fim navbar-->
+
+    <!--Inicio conteudo-->
+    <div class="container pb-3 ps-3 pe-3 ">
+        <div class="row pt-4 text-center">
+            <p class="animate__animated animate__fadeInLeft header1">Produtos</p>
+        </div>
+
+        <!--Primeira fila-->
+        <div class="row mb-5">
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <img src="imagens/coleira-gato.jpg" class="card-img-top" alt="coleira para gatos">
+                    <div class="card-body">
+                        <h5 class="card-title">Coleira para Gatos</h5>
+                        <p class="card-text">Para você que gosta de passear com seu gatinho e levar ele para conhecer o mundo. Garantindo que ele nunca sia de perto de você.</p>
+                        <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#coleiraGatos">Comprar</a><!--Modal trigger-->
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Estoque atual: 24 (atualizado: hoje)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="coleiraGatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Quantidade:</h4>
+                            <input type="number" class="form-control">
+
+                            <hr>
+                            
+                            Ao clicar em 'comprar', o item 'coleira para Gatos' será adicionado ao seu carrinho.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastTrigger">Comprar</button><!--Toast trigger-->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--Fim modal-->
+
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <img src="imagens/brinquedo-cachorro.jpg" class="card-img-top" alt="brinquedo para cachorro">
+                    <div class="card-body">
+                        <h5 class="card-title">Brinquedo para cachorros</h5>
+                        <p class="card-text">Compre um brinquedinho para seu amigo poder ter a máxima diversão!</p>
+                        <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#brinquedoCachorro">Comprar</a><!--Modal trigger-->
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Estoque atual: 15 (atualizado: ontem)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal2 -->
+            <div class="modal fade" id="brinquedoCachorro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Quantidade:</h4>
+                            <input type="number" class="form-control">
+
+                            <hr>
+                            
+                            Ao clicar em 'comprar', o item 'brinquedo para cachorros' será adicionado ao seu carrinho.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastTrigger2">Comprar</button><!--Toast trigger-->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--Fim modal2-->
+
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <img src="imagens/racao-passaro.jpg" class="card-img-top" alt="ração para pássaros">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração de passarinho</h5>
+                        <p class="card-text">Compre um pouco de ração para seu amiguinho penugento. Nossas rações são da maior qualidade disponível no mercado para garantir a felicidade de seu passarinho.</p>
+                        <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#racaoPassaro">Comprar</a><!--Modal trigger-->
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Estoque atual: 75 (atualizado: há 13 horas)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal3 -->
+            <div class="modal fade" id="racaoPassaro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Quantidade:</h4>
+                            <input type="number" class="form-control">
+
+                            <hr>
+                            
+                            Ao clicar em 'comprar', o item 'Ração de passarinho' será adicionado ao seu carrinho.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastTrigger3">Comprar</button><!--Toast trigger-->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--Fim modal3-->
+        
+
+            <!--Segunda fila-->
+        
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <img src="imagens/coleira-antipulga.jpg" class="card-img-top" alt="coleira antipulgas">
+                    <div class="card-body">
+                        <h5 class="card-title">Coleira antipulgas</h5>
+                        <p class="card-text">O produto ideal para proteger seu animalzinho de pulgas, carrapatos e outros ectoparasitas. Produto da maior qualidade visando a saúde do seu Pet.</p>
+                        <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#coleiraPulga">Comprar</a><!--Modal trigger-->
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Estoque atual: 50 (atualizado: há 2 semanas)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal4 -->
+            <div class="modal fade" id="coleiraPulga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Quantidade:</h4>
+                            <input type="number" class="form-control">
+
+                            <hr>
+                            
+                            Ao clicar em 'comprar', o item 'Coleira antipulgas' será adicionado ao seu carrinho.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastTrigger4">Comprar</button><!--Toast trigger-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim modal4-->
+
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <img src="imagens/apito.jpg" class="card-img-top" alt="Apito para cães">
+                    <div class="card-body">
+                        <h5 class="card-title">Apito para cachorro</h5>
+                        <p class="card-text">Um apito simples para adestrar e chamar seu cachorro. Nossos apitos são especialmente fabricados para garantir que os animais não sofram. Eles possuem uma frequência única.</p>
+                        <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#apitoCachorro">Comprar</a><!--Modal trigger-->
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Estoque atual: 34 (atualizado: há 1 semana)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal5 -->
+            <div class="modal fade" id="apitoCachorro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Quantidade:</h4>
+                            <input type="number" class="form-control">
+
+                            <hr>
+                            
+                            Ao clicar em 'comprar', o item 'apito para cachorros' será adicionado ao seu carrinho.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastTrigger5">Comprar</button><!--Toast trigger-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim modal5-->
+
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <img src="imagens/racao-hamster.jpg" class="card-img-top" alt="ração para hamsters">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração de hamster</h5>
+                        <p class="card-text">Nós temos as raçõesda mais alta qualidade disponíveis no mercado. As nossas rações de hamster tem 100% de garantia da felicidade do seu hamsterzinho.</p>
+                        <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#racaoHamster">Comprar</a><!--Modal trigger-->
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Estoque atual: 89 (atualizado: há 23 horas)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal5 -->
+            <div class="modal fade" id="racaoHamster" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Quantidade:</h4>
+                            <input type="number" class="form-control">
+
+                            <hr>
+                            
+                            Ao clicar em 'comprar', o item 'ração de hamster' será adicionado ao seu carrinho.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastTrigger6">Comprar</button><!--Toast trigger-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fim modal5-->
+
+        
+
+            <!--terceira fila-->
+        
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <div class="card-header">
+                        Parceria
+                    </div>
+                    <img src="imagens/whiskas.png" class="card-img-top" alt="ração de gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração úmida para gatos</h5>
+                        <p class="card-text">Ração úmida Whiskas sachê de carne ao molho 85g. Produto fornecido pelos nossos parceiros da Cobasi. Ao comprar pelo nosso site, você nos ajuda com uma pequena porcentagem do preço total da compra.</p>
+                        <a href="https://www.cobasi.com.br/racao-umida-whiskas-carne-gatos-castrados-3797715/p" class="btn btn-primary w-100" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <div class="card-header">
+                        Parceria
+                    </div>
+                    <img src="imagens/vermifugo.webp" class="card-img-top" alt="vermífugo de cachorro">
+                    <div class="card-body">
+                        <h5 class="card-title">Vermífugo para cães pequenos</h5>
+                        <p class="card-text">Vermífugo Drontal plus, para cãs até 10kg. Sabor carne com 2 comprimidos. Produto fornecido pelos nossos parceiros da Cobasi. Ao comprar pelo nosso site, você nos ajuda com uma pequena porcentagem do preço total da compra.</p>
+                        <a href="https://www.cobasi.com.br/vermifugo-drontal-plus-caes-ate-10-kg-sabor-carne-bayer-3587443/p" class="btn btn-primary w-100" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <div class="card-header">
+                        Parceria
+                    </div>
+                    <img src="imagens/arranhador.png" class="card-img-top" alt="arranhador para gatos">
+                    <div class="card-body">
+                        <h5 class="card-title">Arranhador</h5>
+                        <p class="card-text">Arranhador de canto marrom para gatos. Produto fornecido pelos nossos parceiros da Cobasi. Ao comprar pelo nosso site, você nos ajuda com uma pequena porcentagem do preço total da compra.</p>
+                        <a href="https://www.cobasi.com.br/arranhador-de-canto-marrom-3816884/p" class="btn btn-primary w-100" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!--quarta fila-->
+        
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <div class="card-header">
+                        Parceria
+                    </div>
+                    <img src="imagens/poleiro.png" class="card-img-top" alt="poleiro">
+                    <div class="card-body">
+                        <h5 class="card-title">Poleiro</h5>
+                        <p class="card-text">Poleiro com lixa da Kakatoo, tamanho P. Produto fornecido pelos nossos parceiros da Cobasi. Ao comprar pelo nosso site, você nos ajuda com uma pequena porcentagem do preço total da compra.</p>
+                        <a href="https://www.cobasi.com.br/poleiro-com-lixa-kakatoo-3627780/p" class="btn btn-primary w-100" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <div class="card-header">
+                        Parceria
+                    </div>
+                    <img src="imagens/carvao.webp" class="card-img-top" alt="carvão ativado">
+                    <div class="card-body">
+                        <h5 class="card-title">Carvão ativado</h5>
+                        <p class="card-text">Carvão ativado para aquários da Carvomax, 100g. Produto fornecido pelos nossos parceiros da Cobasi. Ao comprar pelo nosso site, você nos ajuda com uma pequena porcentagem do preço total da compra.</p>
+                        <a href="https://www.cobasi.com.br/carvao-ativado-para-aquario-carvomax-3687634/p" class="btn btn-primary w-100" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-5 ">
+                <div class="card w-100 h-100">
+                    <div class="card-header">
+                        Parceria
+                    </div>
+                    <img src="imagens/caixa.webp" class="card-img-top" alt="caixa para trasnportar animais">
+                    <div class="card-body">
+                        <h5 class="card-title">Caixa para animais</h5>
+                        <p class="card-text">Caixa de transporte para animais pequena. Produto fornecido pelos nossos parceiros da Cobasi. Ao comprar pelo nosso site, você nos ajuda com uma pequena porcentagem do preço total da compra.</p>
+                        <a href="https://www.cobasi.com.br/caixa-de-transporte-s-box-rosa-alvorada-3786772/p?idsku=919152" class="btn btn-primary w-100" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim conteudo-->
+
+    <!--Toast-->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastLive" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <!--<img src="..." class="rounded me-2" alt="...">-->
+            <strong class="me-auto"><i class="bi bi-check-square-fill"></i> Compra realizada com sucesso</strong>
+            <small>Agora</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Você acabou de adicionar um item ao seu carrinho. Muito obrigado pela preferência e boas compras!
+          </div>
+        </div>
+    </div>
+    <!--Fim toast-->
+
+    <!--Inicio footer-->
+    <div class="container-fluid bg-dark text-color-light-center" data-bs-theme="dark" id="contato">
+        <div class="row pt-4">
+            <h3>Entre em contato conosco</h3>
+        </div>
+        <div class="row mt-4 pb-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p><i class="bi bi-telephone-fill"></i> Telefone: <br>(19) 9345-2469 <br>(19) 9543-5678 (SAC)</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p><i class="bi bi-envelope-at-fill"></i> E-mail: <br>petshop.contato@patasepelos.com <br>petshop.ajuda@patasepelos.com (SAC)</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p><i class="bi bi-geo-alt-fill"></i> Endereço: <br>Rua Vale das Colheitas, 103. Limeira-SP <br>CEP: 13026-064</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                <p><i class="bi bi-building-fill"></i> CNPJ: <br>03.778.130/0001-48</p>
+            </div>
+        </div>
+    </div>
+    <!--Fim footer-->
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
+
+  <script type="text/javascript">
+    const toastTrigger = document.getElementById('toastTrigger')
+    const toastLiveExample = document.getElementById('toastLive')
+
+    if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+        })
+    }
+  </script>
+
+    <script type="text/javascript">
+        const toastTrigger2 = document.getElementById('toastTrigger2')
+        const toastLiveExample2 = document.getElementById('toastLive')
+
+        if (toastTrigger2) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample2)
+            toastTrigger2.addEventListener('click', () => {
+            toastBootstrap.show()
+            })
+        }
+    </script>
+
+    <script type="text/javascript">
+        const toastTrigger3 = document.getElementById('toastTrigger3')
+        const toastLiveExample3 = document.getElementById('toastLive')
+
+        if (toastTrigger3) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample3)
+            toastTrigger3.addEventListener('click', () => {
+            toastBootstrap.show()
+            })
+        }
+    </script>
+
+    <script type="text/javascript">
+        const toastTrigger4 = document.getElementById('toastTrigger4')
+        const toastLiveExample4 = document.getElementById('toastLive')
+
+        if (toastTrigger4) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample4)
+            toastTrigger4.addEventListener('click', () => {
+            toastBootstrap.show()
+            })
+        }
+    </script>
+
+    <script type="text/javascript">
+        const toastTrigger5 = document.getElementById('toastTrigger5')
+        const toastLiveExample5 = document.getElementById('toastLive')
+
+        if (toastTrigger5) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample5)
+            toastTrigger5.addEventListener('click', () => {
+            toastBootstrap.show()
+            })
+        }
+    </script>
+
+    <script type="text/javascript">
+        const toastTrigger6 = document.getElementById('toastTrigger6')
+        const toastLiveExample6 = document.getElementById('toastLive')
+
+        if (toastTrigger6) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample6)
+            toastTrigger6.addEventListener('click', () => {
+            toastBootstrap.show()
+            })
+        }
+    </script>
+</body>
+</html>

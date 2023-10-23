@@ -1,0 +1,12 @@
+@media (max-width: 992px){
+    #scrollspy{
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    #foto1{
+        height: 11.85em;
+        width: 15.75em;
+    }
+}
